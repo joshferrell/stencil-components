@@ -1,0 +1,36 @@
+{
+  "name": "stencil-comp",
+  "version": "0.0.1",
+  "description": "Stencil Component Starter",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/stencil-comp/stencil-comp.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "storybook": "start-storybook -p 9001 -c .storybook -s www"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "@stencil/core": "^1.0.7",
+    "@storybook/polymer": "^5.1.9",
+    "babel-loader": "^8.0.6",
+    "babel-preset-react-app": "^9.0.0",
+    "lit-html": "^1.1.1",
+    "polymer-webpack-loader": "^2.0.3",
+    "webpack": "^4.35.3"
+  },
+  "license": "MIT"
+}
