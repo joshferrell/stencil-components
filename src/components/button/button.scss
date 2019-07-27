@@ -1,0 +1,60 @@
+
+@import '../../utils/theme/background.scss';
+
+.btn {
+    align-items: center;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    font-weight: var(--fontWeight-medium);
+    letter-spacing: var(--letterSpacing-wide);
+    border-radius: var(--btn-border-radius);
+
+    text-decoration: none;
+    cursor: pointer;
+    
+    transition: all .1s linear;
+    border: var(--btn-border-width) solid;
+    font-family: var(--btn-fontfamily);
+
+    * {
+        outline: 0;
+    }
+}
+
+.btn__primary { @include background('main', true) }
+.btn__secondary { @include background('secondary', true) }
+.btn__tertiary { @include background('tertiary', true) }
+.btn__highlight { @include background('highlight', true) }
+.btn__warning { @include background('warning', true) }
+.btn__danger { @include background('danger', true) }
+.btn__success { @include background('success', true) }
+
+.btn-size__extra-large {
+    font-size: var(--fontSize-2xl);
+    height: var(--space-20);
+    padding-left: var(--space-12);
+    padding-right: var(--space-12);
+}
+
+.btn-size__large {
+    font-size: var(--fontSize-lg);
+    height: var(--space-12);
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+}
+
+.btn-size__regular {
+    font-size: var(--fontSize-base);
+    height: var(--space-10);
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+}
+
+.btn-size__small {
+    font-size: var(--fontSize-sm);
+    height: var(--space-6);
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
+}
+

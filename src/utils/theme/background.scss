@@ -1,0 +1,24 @@
+@mixin background($type, $hoverable: false) {
+    background: var(--#{$type}-l7);
+    color: var(--#{$type}-dark2);
+    border-color: var(--#{$type}-l3);
+
+    & svg {
+        color: var(--#{$type}-l1);
+    }
+
+    @if $hoverable == true {
+        @include backgroundHover($type);
+    }
+}
+
+@mixin backgroundHover($type) {
+    &:hover, &:focus {
+        background: var(--#{$type}-l6);
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow:  0px 0px 0px 1px var(--#{$type}-l4);
+    }
+}
