@@ -1,0 +1,1 @@
+System.register(["./p-f17687cc.system.js"],function(){"use strict";var t,e;return{setters:[function(s){t=s.p;e=s.b}],execute:function(){t().then(function(t){return e([["p-9dl8m4lk.system",[[4,"comp-button",{variant:[1],size:[1]}]]]],{resourcesUrl:t})})}}});

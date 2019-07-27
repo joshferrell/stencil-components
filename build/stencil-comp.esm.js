@@ -1,0 +1,1 @@
+import{p as r,b as s}from"./p-1c1eb8b9.js";r().then(r=>s([["p-trv3x6ab",[[4,"comp-button",{variant:[1],size:[1]}]]]],{resourcesUrl:r}));
